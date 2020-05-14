@@ -15,8 +15,7 @@ public class RefreshMemory {
     
     // это основный метод для старта программы и тут все обрабатывается
     public static void main(String[] args) {
-        int temp = testMethod(25, 25);
-        System.out.println(temp);
+        
     }
     
     // here is the types variables
@@ -264,11 +263,10 @@ public class RefreshMemory {
         int result;
         result = numA + numB;
         return result;
+        
+        //private - means that method can only be used in his class
+        //protected - means that method can be used in parent and child classes
     }
     
     
 }
-
-/*
-this 
-*/
