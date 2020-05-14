@@ -67,37 +67,41 @@ public class RefreshMemory {
     }
     
     public static void mathematicalOp(){
-        char inputCheck;
+        String inputCheck;
         String answer = null;
         Scanner sc = new Scanner(System.in);
         
         do{
             System.out.print("enter the char you want to refresh memory about specific arithmetic operator \n i.e.(+; -; *; /; %):");
-            inputCheck = sc.next(".").charAt(0);
+            inputCheck = sc.next();
             
-            if(inputCheck == '+'){
+            if(inputCheck == "+"){
                 HR();
-                System.out.println("Adds values on either side of the operator. \n A + B will give 30. If there is two +: Increases the value of operand by 1. \n B++ gives 21");
+                System.out.println("Adds values on either side of the operator. \n A + B will give 30.");
                 System.out.println("Do you want to look at something else?");
-            }if(inputCheck == '-'){
+            }if(inputCheck == "-"){
                 HR();
                 System.out.println("Subtracts right-hand operand from left-hand operand. \n A - B will give -10");
                 System.out.println("Do you want to look at something else?");
-            }if(inputCheck == '*'){
+            }if(inputCheck == "*"){
                 HR();
                 System.out.println("Multiplies values on either side of the operator. \n A * B will give 200");
                 System.out.println("Do you want to look at something else?");
-            }if(inputCheck == '/'){
+            }if(inputCheck == "/"){
                 HR();
                 System.out.println("Divides left-hand operand by right-hand operand. \n B/A will give 2");
                 System.out.println("Do you want to look at something else?");
-            }if(inputCheck == '%'){
+            }if(inputCheck == "%"){
                 HR();
                 System.out.println("Divides left-hand operand by right-hand operand and returns remainder. \n B % A will give 0"); 
                 System.out.println("Do you want to look at something else?");
-            }if(inputCheck == '2'){
+            }if(inputCheck == "++"){
                 HR();
-                System.out.println("Increases the value of operand by 1. \n B++ gives 21");
+                System.out.println("Increases the value of operand by 1. \n so B++ gives 21");
+                System.out.println("Do you want to look at something else?");
+            }if(inputCheck == "--"){
+                HR();
+                System.out.println("Decreases the value of operand by 1. \n so B-- gives 19");
                 System.out.println("Do you want to look at something else?");
             }
             
