@@ -72,42 +72,50 @@ public class RefreshMemory {
         Scanner sc = new Scanner(System.in);
         
         do{
-            System.out.print("enter the char you want to refresh memory about specific arithmetic operator \n i.e.(+; -; *; /; %):");
+            System.out.print("Enter the char you want to refresh memory about specific ARITHMETIC OPERATORS \n i.e.(+; -; *; /; %):");
             inputCheck = sc.next();
             
-            if(inputCheck == "+"){
+            if(inputCheck.equals("+")){
                 HR();
                 System.out.println("Adds values on either side of the operator. \n A + B will give 30.");
+                HR();
                 System.out.println("Do you want to look at something else?");
-            }if(inputCheck == "-"){
+            }if(inputCheck.equals("-")){
                 HR();
                 System.out.println("Subtracts right-hand operand from left-hand operand. \n A - B will give -10");
+                HR();
                 System.out.println("Do you want to look at something else?");
-            }if(inputCheck == "*"){
+            }if(inputCheck.equals("*")){
                 HR();
                 System.out.println("Multiplies values on either side of the operator. \n A * B will give 200");
+                HR();
                 System.out.println("Do you want to look at something else?");
-            }if(inputCheck == "/"){
+            }if(inputCheck.equals("/")){
                 HR();
                 System.out.println("Divides left-hand operand by right-hand operand. \n B/A will give 2");
-                System.out.println("Do you want to look at something else?");
-            }if(inputCheck == "%"){
                 HR();
-                System.out.println("Divides left-hand operand by right-hand operand and returns remainder. \n B % A will give 0"); 
                 System.out.println("Do you want to look at something else?");
-            }if(inputCheck == "++"){
+            }if(inputCheck.equals("%")){
+                HR();
+                System.out.println("Divides left-hand operand by right-hand operand and returns remainder. \n B % A will give 0");
+                HR();
+                System.out.println("Do you want to look at something else?");
+            }if(inputCheck.equals("++")){
                 HR();
                 System.out.println("Increases the value of operand by 1. \n so B++ gives 21");
+                HR();
                 System.out.println("Do you want to look at something else?");
-            }if(inputCheck == "--"){
+            }if(inputCheck.equals("--")){
                 HR();
                 System.out.println("Decreases the value of operand by 1. \n so B-- gives 19");
+                HR();
                 System.out.println("Do you want to look at something else?");
             }
             
             answer = sc.next();
         }
         while(answer.toLowerCase().equals("yes"));
+        System.out.println("Goodbye Sweetie");
     }
     //else{
     //            System.out.println("what is that? Do (+; -; *; /; %)");
